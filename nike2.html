@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #000000;
+        }
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+}
+.flexglobal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ .button {
+              position: relative;
+              background-color: #000000;
+              border: none;
+              font-size: 17px;
+              color: #ffffffa3;
+              padding: 3px;
+              width: 200px;
+              text-align: left;
+              transition-duration: 0.4s;
+              text-decoration: none;
+              overflow: hidden;
+              cursor: pointer;
+            }
+            
+            .button:after {
+              content: "";
+              background: #000000;
+              display: block;
+              position: absolute;
+              padding-top: 300%;
+              padding-left: 350%;
+              margin-left: -20px !important;
+              margin-top: -120%;
+              opacity: 0;
+              transition: all 0.8s
+            }
+            
+            .button:active:after {
+              padding: 0;
+              margin: 0;
+              opacity: 1;
+              transition: 0s
+            }
+        h2{
+            text-align: center;
+            color: #ffffff;
+        }
+        p{
+            color: #ffffff;
+            font-size: larger;
+            font-family: initial;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>principais produtos</h2>
+        <p>categorias</p>
+    
+ 
+        <div class="flexglobal">
+        <div class="flex">
+            <div class="flex2">
+
+            </div>
+    <button class="button">>masculino</button>
+    <br>
+        <button class="button">>feminino</button>               
+    <br>
+    <button class="button">>kids</button>
+    <br>
+    <button class="button">>acessorios</button>
+    <br>
+    <button class="button">>ofertas</button>
+    <br>
+    <button class="button">>lançamentos</button>
+    <br>
+    <button class="button">>sobre nós</button>
+ </div> 
+ <img src="https://imgnike-a.akamaihd.net/768x768/02446615.jpg" width="150px" height="150px"> 
+ <img src="https://imgnike-a.akamaihd.net/768x768/02446615.jpg" width="150px" height="150px"> 
+ <img src="https://imgnike-a.akamaihd.net/768x768/02446615.jpg" width="150px" height="150px"> 
+ </div>
+        </body>
+                </html>
+                            
+                            
