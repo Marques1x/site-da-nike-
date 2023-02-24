@@ -59,12 +59,107 @@ li a {
         justify-content: space-between;
 
     }
+
+    body {font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 10%;
+  padding: 6px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.4;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 9px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 6px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 8px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 8px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 150px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 50%%;
+  }
+}
         </style>
     <div class="flexbar">
         <img style="width: 10vw;" src="https://pngimg.com/uploads/nike/nike_PNG11.png">
     <ul>
         <li><a href="nike2.html">Home</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">login</a></li>
         </ul>
 
       <a href="https://www.instagram.com/nike"> <img style="width: 3vw;" src="https://th.bing.com/th/id/R.6a477966e6bbd76d61c6687088dd4942?rik=sn3TB48Eg5JynQ&pid=ImgRaw&r=0"></a>
     </div>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="https://media.istockphoto.com/id/1210939712/vector/user-icon-people-icon-isolated-on-white-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=vKDH9j7PPMN-AiUX8vsKlmOonwx7wjqdKiLge7PX1ZQ=" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
